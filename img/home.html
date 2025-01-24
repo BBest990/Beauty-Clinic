@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Best</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Wed Travel Creative</a>
+            </div>
+            <ul class="links">
+                <li><a href="hero">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="gallery">Gallery</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+            <a href="#" class="action_btn">Get Started</a></li>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="hero">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="gallery">Gallery</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li><a href="#" class="action_btn">Get Started</a></li>
+        </div>
+        </header>
+<main>
+    <section id="hero">
+        <h1>Welcome</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            <br />Architecto autem magni, placeat ratione blanditiis maiores reprehenderit inventore exercitationem explicabo quae dignissimos. 
+            Nesciunt voluptatibus, assumenda incidunt quam harum beatae aspernatur molestiae.
+
+        </p>
+        <div class="media-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-line"></i></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></i></i></a>
+        </div>
+        
+        <div class="media-icons1">
+            <a href="#"><i class="fa-brands fa-tiktok"></i></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></i></i></a>
+        </div>
+
+    </section>
+    <script>
+        const togglebtn = document.querySelector('.toggle_btn')
+        const togglebtnIcon = document.querySelector('.toggle_btn i')
+        const dropdown_menu = document.querySelector('.dropdown_menu')
+        togglebtn.onclick = function() {
+            dropdown_menu.classList.toggle('open')
+            const is0pen = dropdown_menu.classList.contains('open')
+        togglebtnIcon.classList = is0pen
+        ? (togglebtnIcon.classList.replace("fa-bars","fa-xmark"))
+        : (togglebtnIcon.classList.replace("fa-xmark","fa-bars"))    
+        }
+    </script>
+</main>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://png.pngtree.com/thumb_back/fw800/background/20220215/pngtree-chinese-style-outing-tomb-sweeping-day-light-color-background-poster-image_925784.jpg" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bff.css">
+    <title>Best</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">คลินิกความงาม</a>
+            </div>
+            <ul class="links">
+                <li><a href="hero">หน้าแรก</a></li>
+                <li><a href="about">ร้านค้า</a></li>
+                <li><a href="gallery">เกี่ยวกับเรา</a></li>
+                <li><a href="contact">ของสะสม</a></li>
+            </ul>
+            <a href="#" class="action_btn"></a></li>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="hero">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="gallery">Gallery</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li><a href="#" class="action_btn"></a></li>
+        </div>
+        </header>
+<main>
+    <section id="hero">
+        <h1>รายละเอียด</h1>
+        <p>-หน้าขาวใส โดยมาร์คทิ้งไว้ 30 นาที เป็นประจำทุกวัน -ช่วยลดการเกิดสิว -ช่วยกระชับรูขุมขน
+
+        <p></p>
+        <p>ช่องทางการติดต่อ </p>
+        <p>FB:Oakkadet puritang</p>
+        <p>ติดต่อสอบถาม 0658592365</p>
+        
+        
+
+
+
+        <img src="https://bkacne.com/upload/images/how-to-choose-a-bookmark-to-suit-the-skin.jpg" width="25%">
+        <img src="" width="10%" >
+        
+
+        </p>
+        <div class="media-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-line"></i></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></i></i></a>
+        </div>
+        
+        <div class="media-icons1">
+            <a href="#"><i class="fa-brands fa-tiktok"></i></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></i></i></a>
+        </div>
+
+    </section>
+    <script>
+        const togglebtn = document.querySelector('.toggle_btn')
+        const togglebtnIcon = document.querySelector('.toggle_btn i')
+        const dropdown_menu = document.querySelector('.dropdown_menu')
+        togglebtn.onclick = function() {
+            dropdown_menu.classList.toggle('open')
+            const is0pen = dropdown_menu.classList.contains('open')
+        togglebtnIcon.classList = is0pen
+        ? (togglebtnIcon.classList.replace("fa-bars","fa-xmark"))
+        : (togglebtnIcon.classList.replace("fa-xmark","fa-bars"))    
+        }
+    </script>
+</main>
+</body>
+</html>
